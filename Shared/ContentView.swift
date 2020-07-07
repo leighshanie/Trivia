@@ -14,13 +14,68 @@ extension View {
     }
 }
 
+extension View {
+    
+    /// Hide or show the view based on a boolean value.
+    ///
+    /// Example for visibility:
+    /// ```
+    /// Text("Label")
+    ///     .isHidden(true)
+    /// ```
+    ///
+    /// Example for complete removal:
+    /// ```
+    /// Text("Label")
+    ///     .isHidden(true, remove: true)
+    /// ```
+    ///
+    /// - Parameters:
+    ///   - hidden: Set to `false` to show the view. Set to `true` to hide the view.
+    ///   - remove: Boolean value indicating whether or not to remove the view.
+    func isHidden(_ hidden: Bool, remove: Bool = false) -> some View {
+        modifier(HiddenModifier(isHidden: hidden, remove: remove))
+    }
+}
+
+
+/// Creates a view modifier to show and hide a view.
+///
+/// Variables can be used in place so that the content can be changed dynamically.
+fileprivate struct HiddenModifier: ViewModifier {
+
+    private let isHidden: Bool
+    private let remove: Bool
+
+    init(isHidden: Bool, remove: Bool = false) {
+        self.isHidden = isHidden
+        self.remove = remove
+    }
+
+    func body(content: Content) -> some View {
+        Group {
+            if isHidden {
+                if remove {
+                    EmptyView()
+                } else {
+                    content.hidden()
+                }
+            } else {
+                content
+            }
+        }
+    }
+}
+
+
 struct ContentView: View {
     
     @Environment(\.accessibilityDifferentiateWithoutColor) var differentiateWithoutColor
+    @Environment(\.accessibilityEnabled) var accessibilityEnabled
     
     @State private var cards = [Card](repeating: Card.example, count: 10)
     @State private var isActive = true
-    @State private var timeRemaining = 5
+    @State private var timeRemaining = 100
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
@@ -28,13 +83,15 @@ struct ContentView: View {
             VStack {
                 HStack {
                     if cards.isEmpty || timeRemaining == 0 {
-                        Button("Start Again", action: resetCards)
-                            .padding()
-                            .background(Color.white)
-                            .foregroundColor(.black)
+                        Button("Replay", action: resetCards)
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 5)
+                            .background(Color.black)
                             .clipShape(Capsule())
-                        
-                        
+                            .opacity(0.75)
+                            
                     }
                     
                     Spacer()
@@ -47,7 +104,7 @@ struct ContentView: View {
                             Capsule()
                                 .fill(Color.black)
                                 .opacity(0.75)
-                        )
+                        ).isHidden(timeRemaining == 0)
                 }
                     
                 ZStack {
@@ -58,6 +115,8 @@ struct ContentView: View {
                             }
                         }
                         .stacked(at: index, in: self.cards.count)
+                        .allowsHitTesting(index == self.cards.count - 1)
+                        .accessibility(hidden: index < self.cards.count - 1)
                     }
                 }
                 .allowsHitTesting(timeRemaining > 0)
@@ -73,22 +132,38 @@ struct ContentView: View {
 //                }
                 
             }
-            if differentiateWithoutColor {
+            if differentiateWithoutColor || accessibilityEnabled {
                 VStack {
                     Spacer()
                     
                     HStack {
-                        Image(systemName: "xmark.circle")
-                            .padding()
-                            .background(Color.black.opacity(0.7))
-                            .clipShape(Circle())
+                        Button(action: {
+                            withAnimation {
+                                self.removeCard(at: self.cards.count - 1)
+                            }
+                        }) {
+                            Image(systemName: "xmark.circle")
+                                .padding()
+                                .background(Color.black.opacity(0.7))
+                                .clipShape(Circle())
+                        }
+                        .accessibility(label: Text("Wrong"))
+                        .accessibility(hint: Text("Mark your answer as being incorrect."))
                         
                         Spacer()
                         
-                        Image(systemName: "checkmark.circle")
-                            .padding()
-                            .background(Color.black.opacity(0.7))
-                            .clipShape(Circle())
+                        Button(action: {
+                            withAnimation {
+                                self.removeCard(at: self.cards.count - 1)
+                            }
+                        }) {
+                            Image(systemName: "checkmark.circle")
+                                .padding()
+                                .background(Color.black.opacity(0.7))
+                                .clipShape(Circle())
+                        }
+                        .accessibility(label: Text("Correct"))
+                        .accessibility(hint: Text("Mark your answer as being correct."))
                     }
                     .foregroundColor(.white)
                     .font(.largeTitle)
@@ -114,6 +189,8 @@ struct ContentView: View {
     }
     
     func removeCard(at index: Int) {
+        guard index >= 0 else { return }
+        
         cards.remove(at: index)
         
         if cards.isEmpty {
