@@ -19,6 +19,8 @@
 		BA1E4A1E24B4B7A50081CF52 /* hapticsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A1C24B4B7A50081CF52 /* hapticsTest.swift */; };
 		BA1E4A2024B4C19C0081CF52 /* hitTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A1F24B4C19C0081CF52 /* hitTesting.swift */; };
 		BA1E4A2124B4C19C0081CF52 /* hitTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A1F24B4C19C0081CF52 /* hitTesting.swift */; };
+		BA1E4A2324B4C5090081CF52 /* timerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A2224B4C5090081CF52 /* timerView.swift */; };
+		BA1E4A2424B4C5090081CF52 /* timerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A2224B4C5090081CF52 /* timerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,7 @@
 		BA1E4A1924B4B5100081CF52 /* combinedGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = combinedGesture.swift; sourceTree = "<group>"; };
 		BA1E4A1C24B4B7A50081CF52 /* hapticsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hapticsTest.swift; sourceTree = "<group>"; };
 		BA1E4A1F24B4C19C0081CF52 /* hitTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hitTesting.swift; sourceTree = "<group>"; };
+		BA1E4A2224B4C5090081CF52 /* timerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 				BA1E4A1924B4B5100081CF52 /* combinedGesture.swift */,
 				BA1E4A1C24B4B7A50081CF52 /* hapticsTest.swift */,
 				BA1E4A1F24B4C19C0081CF52 /* hitTesting.swift */,
+				BA1E4A2224B4C5090081CF52 /* timerView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -203,6 +207,7 @@
 				BA1E4A2024B4C19C0081CF52 /* hitTesting.swift in Sources */,
 				BA1E4A0D24B4A7090081CF52 /* ContentView.swift in Sources */,
 				BA1E4A1A24B4B5100081CF52 /* combinedGesture.swift in Sources */,
+				BA1E4A2324B4C5090081CF52 /* timerView.swift in Sources */,
 				BA1E4A0B24B4A7090081CF52 /* FlashzillaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +220,7 @@
 				BA1E4A2124B4C19C0081CF52 /* hitTesting.swift in Sources */,
 				BA1E4A0E24B4A7090081CF52 /* ContentView.swift in Sources */,
 				BA1E4A1B24B4B5100081CF52 /* combinedGesture.swift in Sources */,
+				BA1E4A2424B4C5090081CF52 /* timerView.swift in Sources */,
 				BA1E4A0C24B4A7090081CF52 /* FlashzillaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

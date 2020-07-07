@@ -13,7 +13,8 @@ struct FlashzillaApp: App {
         WindowGroup {
 //            hapticsTest()
 //            ContentView()
-            hitTesting()
+//            hitTesting()
+            timerView()
         }
     }
 }
