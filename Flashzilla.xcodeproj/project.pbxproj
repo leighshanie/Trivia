@@ -21,6 +21,10 @@
 		BA1E4A2124B4C19C0081CF52 /* hitTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A1F24B4C19C0081CF52 /* hitTesting.swift */; };
 		BA1E4A2324B4C5090081CF52 /* timerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A2224B4C5090081CF52 /* timerView.swift */; };
 		BA1E4A2424B4C5090081CF52 /* timerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A2224B4C5090081CF52 /* timerView.swift */; };
+		BA1E4A2624B4C9080081CF52 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A2524B4C9080081CF52 /* CardView.swift */; };
+		BA1E4A2724B4C9080081CF52 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A2524B4C9080081CF52 /* CardView.swift */; };
+		BA1E4A2924B4C9600081CF52 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A2824B4C9600081CF52 /* Card.swift */; };
+		BA1E4A2A24B4C9600081CF52 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A2824B4C9600081CF52 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,8 @@
 		BA1E4A1C24B4B7A50081CF52 /* hapticsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hapticsTest.swift; sourceTree = "<group>"; };
 		BA1E4A1F24B4C19C0081CF52 /* hitTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hitTesting.swift; sourceTree = "<group>"; };
 		BA1E4A2224B4C5090081CF52 /* timerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerView.swift; sourceTree = "<group>"; };
+		BA1E4A2524B4C9080081CF52 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		BA1E4A2824B4C9600081CF52 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,8 @@
 				BA1E4A1C24B4B7A50081CF52 /* hapticsTest.swift */,
 				BA1E4A1F24B4C19C0081CF52 /* hitTesting.swift */,
 				BA1E4A2224B4C5090081CF52 /* timerView.swift */,
+				BA1E4A2524B4C9080081CF52 /* CardView.swift */,
+				BA1E4A2824B4C9600081CF52 /* Card.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -203,12 +211,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1E4A2624B4C9080081CF52 /* CardView.swift in Sources */,
 				BA1E4A1D24B4B7A50081CF52 /* hapticsTest.swift in Sources */,
 				BA1E4A2024B4C19C0081CF52 /* hitTesting.swift in Sources */,
 				BA1E4A0D24B4A7090081CF52 /* ContentView.swift in Sources */,
 				BA1E4A1A24B4B5100081CF52 /* combinedGesture.swift in Sources */,
 				BA1E4A2324B4C5090081CF52 /* timerView.swift in Sources */,
 				BA1E4A0B24B4A7090081CF52 /* FlashzillaApp.swift in Sources */,
+				BA1E4A2924B4C9600081CF52 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,12 +226,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1E4A2724B4C9080081CF52 /* CardView.swift in Sources */,
 				BA1E4A1E24B4B7A50081CF52 /* hapticsTest.swift in Sources */,
 				BA1E4A2124B4C19C0081CF52 /* hitTesting.swift in Sources */,
 				BA1E4A0E24B4A7090081CF52 /* ContentView.swift in Sources */,
 				BA1E4A1B24B4B5100081CF52 /* combinedGesture.swift in Sources */,
 				BA1E4A2424B4C5090081CF52 /* timerView.swift in Sources */,
 				BA1E4A0C24B4A7090081CF52 /* FlashzillaApp.swift in Sources */,
+				BA1E4A2A24B4C9600081CF52 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

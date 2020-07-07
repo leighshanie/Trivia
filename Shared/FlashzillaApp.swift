@@ -14,7 +14,8 @@ struct FlashzillaApp: App {
 //            hapticsTest()
 //            ContentView()
 //            hitTesting()
-            timerView()
+//            timerView()
+            CardView(card: Card.example)
         }
     }
 }
