@@ -11,6 +11,7 @@ import SwiftUI
 struct FlashzillaApp: App {
     var body: some Scene {
         WindowGroup {
+            hapticsTest()
             ContentView()
         }
     }
