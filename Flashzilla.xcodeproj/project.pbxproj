@@ -13,6 +13,10 @@
 		BA1E4A0E24B4A7090081CF52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E49F924B4A7040081CF52 /* ContentView.swift */; };
 		BA1E4A0F24B4A7090081CF52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1E49FA24B4A7090081CF52 /* Assets.xcassets */; };
 		BA1E4A1024B4A7090081CF52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1E49FA24B4A7090081CF52 /* Assets.xcassets */; };
+		BA1E4A1A24B4B5100081CF52 /* combinedGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A1924B4B5100081CF52 /* combinedGesture.swift */; };
+		BA1E4A1B24B4B5100081CF52 /* combinedGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A1924B4B5100081CF52 /* combinedGesture.swift */; };
+		BA1E4A1D24B4B7A50081CF52 /* hapticsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A1C24B4B7A50081CF52 /* hapticsTest.swift */; };
+		BA1E4A1E24B4B7A50081CF52 /* hapticsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A1C24B4B7A50081CF52 /* hapticsTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		BA1E4A0724B4A7090081CF52 /* Flashzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1E4A0924B4A7090081CF52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA1E4A0A24B4A7090081CF52 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		BA1E4A1924B4B5100081CF52 /* combinedGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = combinedGesture.swift; sourceTree = "<group>"; };
+		BA1E4A1C24B4B7A50081CF52 /* hapticsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hapticsTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,8 @@
 				BA1E49F824B4A7040081CF52 /* FlashzillaApp.swift */,
 				BA1E49F924B4A7040081CF52 /* ContentView.swift */,
 				BA1E49FA24B4A7090081CF52 /* Assets.xcassets */,
+				BA1E4A1924B4B5100081CF52 /* combinedGesture.swift */,
+				BA1E4A1C24B4B7A50081CF52 /* hapticsTest.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -187,7 +195,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1E4A1D24B4B7A50081CF52 /* hapticsTest.swift in Sources */,
 				BA1E4A0D24B4A7090081CF52 /* ContentView.swift in Sources */,
+				BA1E4A1A24B4B5100081CF52 /* combinedGesture.swift in Sources */,
 				BA1E4A0B24B4A7090081CF52 /* FlashzillaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1E4A1E24B4B7A50081CF52 /* hapticsTest.swift in Sources */,
 				BA1E4A0E24B4A7090081CF52 /* ContentView.swift in Sources */,
+				BA1E4A1B24B4B5100081CF52 /* combinedGesture.swift in Sources */,
 				BA1E4A0C24B4A7090081CF52 /* FlashzillaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
