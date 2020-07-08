@@ -27,6 +27,8 @@
 		BA1E4A2A24B4C9600081CF52 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A2824B4C9600081CF52 /* Card.swift */; };
 		BA1E4A2C24B4CD690081CF52 /* gestureTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A2B24B4CD690081CF52 /* gestureTapView.swift */; };
 		BA1E4A2D24B4CD690081CF52 /* gestureTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A2B24B4CD690081CF52 /* gestureTapView.swift */; };
+		BA1E4A2F24B5FC690081CF52 /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A2E24B5FC690081CF52 /* EditCards.swift */; };
+		BA1E4A3024B5FC690081CF52 /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E4A2E24B5FC690081CF52 /* EditCards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,7 @@
 		BA1E4A2524B4C9080081CF52 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		BA1E4A2824B4C9600081CF52 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		BA1E4A2B24B4CD690081CF52 /* gestureTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gestureTapView.swift; sourceTree = "<group>"; };
+		BA1E4A2E24B5FC690081CF52 /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,7 @@
 				BA1E4A2224B4C5090081CF52 /* timerView.swift */,
 				BA1E4A2524B4C9080081CF52 /* CardView.swift */,
 				BA1E4A2824B4C9600081CF52 /* Card.swift */,
+				BA1E4A2E24B5FC690081CF52 /* EditCards.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -218,6 +222,7 @@
 				BA1E4A2624B4C9080081CF52 /* CardView.swift in Sources */,
 				BA1E4A1D24B4B7A50081CF52 /* hapticsTest.swift in Sources */,
 				BA1E4A2C24B4CD690081CF52 /* gestureTapView.swift in Sources */,
+				BA1E4A2F24B5FC690081CF52 /* EditCards.swift in Sources */,
 				BA1E4A2024B4C19C0081CF52 /* hitTesting.swift in Sources */,
 				BA1E4A0D24B4A7090081CF52 /* ContentView.swift in Sources */,
 				BA1E4A1A24B4B5100081CF52 /* combinedGesture.swift in Sources */,
@@ -234,6 +239,7 @@
 				BA1E4A2724B4C9080081CF52 /* CardView.swift in Sources */,
 				BA1E4A1E24B4B7A50081CF52 /* hapticsTest.swift in Sources */,
 				BA1E4A2D24B4CD690081CF52 /* gestureTapView.swift in Sources */,
+				BA1E4A3024B5FC690081CF52 /* EditCards.swift in Sources */,
 				BA1E4A2124B4C19C0081CF52 /* hitTesting.swift in Sources */,
 				BA1E4A0E24B4A7090081CF52 /* ContentView.swift in Sources */,
 				BA1E4A1B24B4B5100081CF52 /* combinedGesture.swift in Sources */,
