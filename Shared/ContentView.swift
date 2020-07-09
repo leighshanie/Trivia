@@ -157,6 +157,7 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .padding()
             }
+            
             if differentiateWithoutColor || accessibilityEnabled {
                 VStack {
                     Spacer()
@@ -246,5 +247,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewLayout(PreviewLayout.fixed(width:568,height:320))
     }
 }

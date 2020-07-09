@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA1E4A0B24B4A7090081CF52 /* FlashzillaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E49F824B4A7040081CF52 /* FlashzillaApp.swift */; };
-		BA1E4A0C24B4A7090081CF52 /* FlashzillaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E49F824B4A7040081CF52 /* FlashzillaApp.swift */; };
+		BA1E4A0B24B4A7090081CF52 /* TriviaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E49F824B4A7040081CF52 /* TriviaApp.swift */; };
+		BA1E4A0C24B4A7090081CF52 /* TriviaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E49F824B4A7040081CF52 /* TriviaApp.swift */; };
 		BA1E4A0D24B4A7090081CF52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E49F924B4A7040081CF52 /* ContentView.swift */; };
 		BA1E4A0E24B4A7090081CF52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E49F924B4A7040081CF52 /* ContentView.swift */; };
 		BA1E4A0F24B4A7090081CF52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1E49FA24B4A7090081CF52 /* Assets.xcassets */; };
@@ -32,12 +32,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BA1E49F824B4A7040081CF52 /* FlashzillaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaApp.swift; sourceTree = "<group>"; };
+		BA1E49F824B4A7040081CF52 /* TriviaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaApp.swift; sourceTree = "<group>"; };
 		BA1E49F924B4A7040081CF52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BA1E49FA24B4A7090081CF52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BA1E49FF24B4A7090081CF52 /* Flashzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA1E49FF24B4A7090081CF52 /* Trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1E4A0224B4A7090081CF52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA1E4A0724B4A7090081CF52 /* Flashzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA1E4A0724B4A7090081CF52 /* Trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1E4A0924B4A7090081CF52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA1E4A0A24B4A7090081CF52 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		BA1E4A1924B4B5100081CF52 /* combinedGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = combinedGesture.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		BA1E49F724B4A7040081CF52 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				BA1E49F824B4A7040081CF52 /* FlashzillaApp.swift */,
+				BA1E49F824B4A7040081CF52 /* TriviaApp.swift */,
 				BA1E49F924B4A7040081CF52 /* ContentView.swift */,
 				BA1E4A2B24B4CD690081CF52 /* gestureTapView.swift */,
 				BA1E49FA24B4A7090081CF52 /* Assets.xcassets */,
@@ -99,8 +99,8 @@
 		BA1E4A0024B4A7090081CF52 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BA1E49FF24B4A7090081CF52 /* Flashzilla.app */,
-				BA1E4A0724B4A7090081CF52 /* Flashzilla.app */,
+				BA1E49FF24B4A7090081CF52 /* Trivia.app */,
+				BA1E4A0724B4A7090081CF52 /* Trivia.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,7 +139,7 @@
 			);
 			name = iOS;
 			productName = iOS;
-			productReference = BA1E49FF24B4A7090081CF52 /* Flashzilla.app */;
+			productReference = BA1E49FF24B4A7090081CF52 /* Trivia.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BA1E4A0624B4A7090081CF52 /* macOS */ = {
@@ -156,7 +156,7 @@
 			);
 			name = macOS;
 			productName = macOS;
-			productReference = BA1E4A0724B4A7090081CF52 /* Flashzilla.app */;
+			productReference = BA1E4A0724B4A7090081CF52 /* Trivia.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -176,7 +176,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BA1E49F624B4A7030081CF52 /* Build configuration list for PBXProject "Flashzilla" */;
+			buildConfigurationList = BA1E49F624B4A7030081CF52 /* Build configuration list for PBXProject "Trivia" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -227,7 +227,7 @@
 				BA1E4A0D24B4A7090081CF52 /* ContentView.swift in Sources */,
 				BA1E4A1A24B4B5100081CF52 /* combinedGesture.swift in Sources */,
 				BA1E4A2324B4C5090081CF52 /* timerView.swift in Sources */,
-				BA1E4A0B24B4A7090081CF52 /* FlashzillaApp.swift in Sources */,
+				BA1E4A0B24B4A7090081CF52 /* TriviaApp.swift in Sources */,
 				BA1E4A2924B4C9600081CF52 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,7 +244,7 @@
 				BA1E4A0E24B4A7090081CF52 /* ContentView.swift in Sources */,
 				BA1E4A1B24B4B5100081CF52 /* combinedGesture.swift in Sources */,
 				BA1E4A2424B4C5090081CF52 /* timerView.swift in Sources */,
-				BA1E4A0C24B4A7090081CF52 /* FlashzillaApp.swift in Sources */,
+				BA1E4A0C24B4A7090081CF52 /* TriviaApp.swift in Sources */,
 				BA1E4A2A24B4C9600081CF52 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,8 +377,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shaneleigh.Flashzilla;
-				PRODUCT_NAME = Flashzilla;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaneleigh.trivia;
+				PRODUCT_NAME = Trivia;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -399,8 +399,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shaneleigh.Flashzilla;
-				PRODUCT_NAME = Flashzilla;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shaneleigh.trivia;
+				PRODUCT_NAME = Trivia;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -426,7 +426,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.16;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shaneleigh.Flashzilla;
-				PRODUCT_NAME = Flashzilla;
+				PRODUCT_NAME = Trivia;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -450,7 +450,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.16;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shaneleigh.Flashzilla;
-				PRODUCT_NAME = Flashzilla;
+				PRODUCT_NAME = Trivia;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -459,7 +459,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BA1E49F624B4A7030081CF52 /* Build configuration list for PBXProject "Flashzilla" */ = {
+		BA1E49F624B4A7030081CF52 /* Build configuration list for PBXProject "Trivia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BA1E4A1124B4A7090081CF52 /* Debug */,

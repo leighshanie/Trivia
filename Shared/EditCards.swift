@@ -1,6 +1,6 @@
 //
 //  EditCards.swift
-//  Flashzilla
+//  Trivia
 //
 //  Created by Shane Leigh on 08/07/2020.
 //
