@@ -8,7 +8,7 @@
 
 
 <img src="Images/screenshot1.gif">
-<img src="Images/screenshot2.git">
+<img src="Images/screenshot2.gif">
 
 ## Features
 
