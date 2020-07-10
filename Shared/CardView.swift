@@ -55,6 +55,7 @@ struct CardView: View {
             }
             .padding(20)
             .multilineTextAlignment(.center)
+            .minimumScaleFactor(0.5)
         }
         .frame(width: 450, height: 250)
         .rotationEffect(.degrees(Double(offset.width / 5)))
